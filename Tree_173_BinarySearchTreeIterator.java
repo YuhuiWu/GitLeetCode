@@ -15,7 +15,7 @@
  * }
  */
 
-public class BSTIterator {
+public class Tree_173_BinarySearchTreeIterator {  //In real program the class name should be BSTIterator
 		private Stack<TreeNode> stack=new Stack<TreeNode>();
     public BSTIterator(TreeNode root) {
         pushLeft(root);
