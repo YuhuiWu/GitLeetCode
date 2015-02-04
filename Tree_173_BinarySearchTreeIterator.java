@@ -16,10 +16,11 @@
  */
 
 public class Tree_173_BinarySearchTreeIterator {  //In real program the class name should be BSTIterator
-		private Stack<TreeNode> stack=new Stack<TreeNode>();
+	
     public BSTIterator(TreeNode root) {
         pushLeft(root);
     }
+    private Stack<TreeNode> stack=new Stack<TreeNode>();
     private void pushLeft(TreeNode node){
     		if(node!=null){
     				stack.push(node);
