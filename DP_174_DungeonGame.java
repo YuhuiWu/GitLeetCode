@@ -14,7 +14,7 @@ public class DP_174_DungeonGame {
     public int calculateMinimumHP(int[][] dungeon) {
         int m=dungeon.length;
         int n=dungeon[0].length;
-        int[] dp=new int[m][n];
+        int[][] dp=new int[m][n];
         //Initialize
         dp[m-1][n-1]=Math.max(0-dungeon[m-1][n-1],0);
         for(int i = m-2; i >= 0; i--){
